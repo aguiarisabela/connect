@@ -1,0 +1,134 @@
+@use "../../styleglobal.scss" as *;
+
+.Container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  min-height: 80vh;
+
+  .cardText {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+
+    .sectionText {
+      padding: 50px;
+      
+      .titleText {
+        font-size: 70px;
+        color: $primary-color;
+        line-height: 1.1;
+        margin-bottom: 24px;
+        font-family: "Source Sans 3", sans-serif;
+        font-weight: 700;
+      }
+
+      .pragraphText {
+        font-family: "Helvetica", sans-serif;
+        font-size: 18px;
+        color: $primary-color;
+        margin-bottom: 32px;
+        line-height: 1.5;
+        max-width: 500px;
+      }
+
+      .cadastrobtn {
+        background: $color-btn;
+        color: white;
+        border: none;
+        padding: 16px 32px;
+        border-radius: 4px;
+        cursor: pointer;
+        width: fit-content;
+        font-family: "Source Sans 3", sans-serif;
+        font-size: 20px;
+        font-weight: 600;
+        transition: 0.3s;
+
+        &:hover { opacity: 0.9; }
+      }
+    }
+
+    .campDados {
+      display: flex;
+      flex-direction: row;
+      padding: 0 50px;
+      gap: 40px;
+
+      article {
+        text-align: center;
+        h2 {
+          color: $primary-color;
+          font-size: 48px;
+          margin-bottom: 8px;
+        }
+        h3 {
+          font-size: 14px;
+          color: $primary-color;
+          font-weight: 400;
+        }
+      }
+    }
+  }
+
+  .cardImage {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    
+    .Banner {
+      width: 90%;
+      height: auto;
+      max-width: 600px;
+    }
+  }
+
+
+  @media (max-width: 850px) {
+    flex-direction: column;
+    text-align: center;
+
+    .cardText {
+      .sectionText {
+        padding: 40px 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .titleText {
+          font-size: 42px; 
+        }
+
+        .pragraphText {
+          font-size: 16px;
+          margin: 0 auto 24px;
+        }
+
+        .cadastrobtn {
+          width: 80%;
+          font-size: 18px;
+        }
+      }
+
+      .campDados {
+        justify-content: center;
+        gap: 20px;
+        padding: 0 10px 40px;
+        
+        article h2 {
+          font-size: 32px;
+        }
+      }
+    }
+
+    .cardImage {
+      order: 2;
+      width: 100%;
+      padding-bottom: 50px;
+      
+      .Banner {
+        width: 80%;
+      }
+    }
+  }
+}

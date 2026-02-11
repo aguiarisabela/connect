@@ -1,0 +1,59 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+#root {
+  display: grid;
+  min-height: 100vh;
+  grid-template-rows: auto 1fr auto;
+  width: 100%;
+}
+
+$primary-color: #205691;
+$color-btn: #fd7267;
+$secondary-color: #122f97;
+$third-color: #ffffff;
+$fourth-color: #000000;
+$fifth-color: #e9eff4;
+$sixth-color: #278733;
+$seventh-color: #d4e7d6;
+
+.container {
+  margin-top: 1.5rem;
+  padding: 1rem;
+  text-align: center;
+  flex: 1;
+}
+h1,
+h2 {
+  font-family: "Source Sans 3", sans-serif;
+  color: $primary-color;
+  font-weight: 700;
+  line-height: 100%;
+  font-size: 3.5rem;
+}
+p {
+  font-family: "Helvetica", sans-serif;
+  font-weight: 400;
+  color: $primary-color;
+}
+
+.cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4rem;
+  margin-top: 3rem;
+
+  @media (width >= 1024px) {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+    gap: 0;
+  }
+}
