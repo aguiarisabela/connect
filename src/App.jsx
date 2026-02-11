@@ -8,6 +8,8 @@ import Voluntariado from "./pages/voluntariado/Voluntariado";
 import Mentoria from "./pages/mentoria/Mentoria";
 import Eventos from "./pages/eventos/Eventos";
 import Usuario from "./pages/user/User";
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const App = () => {
   return (
@@ -22,6 +24,7 @@ const App = () => {
           <Route path="/eventos" element={<Eventos />} />
           <Route path="/usuario" element={<Usuario />} />
         </Routes>
+        <ToastContainer position="top-right" autoClose={3000} />
         <Footer />
       </BrowserRouter>
     </>
