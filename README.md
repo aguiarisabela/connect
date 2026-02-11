@@ -1,16 +1,32 @@
-# React + Vite
+# 🌐 Connect Project
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+O **Connect** é uma aplicação web desenvolvida para facilitar a interação e o gerenciamento de perfis de usuários. O foco principal deste projeto é aplicar conceitos avançados de **componentização**, **roteamento dinâmico** e **estilização modular**, garantindo que a interface seja rápida, responsiva e fácil de manter.
 
-Currently, two official plugins are available:
+## 🚀 Sobre o Projeto
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+O propósito deste site é democratizar o acesso ao conhecimento e ao apoio social. Através de uma interface intuitiva e moderna, facilitamos o engajamento de mentores e doadores, além de organizar o calendário de eventos e palestras para a comunidade.
 
-## React Compiler
+## 🛠️ Stack Tecnológica
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+As escolhas técnicas para este projeto foram baseadas em escalabilidade e performance:
 
-## Expanding the ESLint configuration
+* **React (v18+):** Biblioteca principal utilizada pela sua eficiência na manipulação do DOM virtual e criação de interfaces declarativas.
+* **Vite:** Escolhido como substituto do *Create React App* por ser extremamente leve e oferecer um Hot Module Replacement (HMR) muito mais rápido.
+* **SASS (SCSS):** Utilizado para levar o CSS a outro nível. O uso de variáveis, mixins e aninhamento permite um código de estilo muito mais limpo e organizado do que o CSS convencional.
+* **CSS Modules:** Para evitar o vazamento de estilos entre componentes. Cada arquivo `.module.scss` garante que a estilização de uma página (como a `User`) não afete as outras.
+* **React Router Dom:** A ferramenta padrão para gerenciar a navegação Single Page Application (SPA), permitindo que o usuário mude de página sem que o navegador precise recarregar todo o site.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 💡 Funcionalidades Implementadas
+
+* **Sistema de Rotas:** Navegação configurada entre a Home e as páginas de Usuário.
+* **Estilização Global vs. Modular:** Separação clara entre o que é estilo base (reset, cores principais, fontes) e o que é estilo específico de componente.
+* **Design Responsivo:** Focado em se adaptar a diferentes tamanhos de tela.
+* **Tratamento de Sombras e Efeitos:** Aplicação de `text-shadow` e `drop-shadow` via SCSS para uma interface mais profunda e moderna.
+
+## 📖 O que aprendi
+
+Durante o desenvolvimento deste projeto, foquei em resolver problemas reais de arquitetura de software, como:
+
+1. Importação correta de módulos de estilo no Sass.
+2. Configuração de ambiente do zero com Vite.
+3. Gerenciamento de hierarquia de pastas para projetos React profissionais.
